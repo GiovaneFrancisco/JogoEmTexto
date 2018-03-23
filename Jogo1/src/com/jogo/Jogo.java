@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Jogo {
-
+	//Atualizações -> Commit para o GitHub
 	// Métodos de criação
 	public static void menu() {
 		Scanner teclado = new Scanner(System.in);
@@ -435,7 +435,7 @@ public class Jogo {
 		}
 	}
 
-	// Método principal
+	// Método principal -> Início do jogo
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		Random gerador = new Random();
