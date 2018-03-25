@@ -436,6 +436,7 @@ public class Jogo {
 	}
 
 	// Método principal -> Início do jogo
+	// Atualização feita pelo Desktop
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		Random gerador = new Random();
