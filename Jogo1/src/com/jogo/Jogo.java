@@ -144,7 +144,7 @@ public class Jogo {
 			System.out.println();
 			System.out.println("Você vai de encontro ao balção, lá tem 5 homens sentados, todos conversando, rindo e bebendo.");
 			System.out.println("Quando eles persebem a sua presença, todo o movimento é interrompido e um silêncio toma conta do balção");
-			balcao();
+			balcao(); 
 			break;
 		case 2:
 			System.out.println();
@@ -161,7 +161,8 @@ public class Jogo {
 			velho();
 			break;
 		default:
-			escolha1();
+			System.out.println("Opção inválida");
+			escolha1(); 
 			break;
 		}
 	}
@@ -445,16 +446,16 @@ public class Jogo {
 		String clas = "a";
 		int classe;
 		System.out.println("Digite o nome do seu personagem:");
-		nome = teclado.nextLine();
+		nome = teclado.nextLine(); 
 		System.out.println("Escolha a classe do seu personagem");
 		System.out.println("[1] Mago");
 		System.out.println("[2] Feitiçeiro");
 		System.out.println("[3] Guerreiro");
 		System.out.println("[4] Ladino");
-		classe = teclado.nextInt();
-		switch (classe) {
+		classe = teclado.nextInt(); 
+		switch (classe) { //Pega a classe int e transforma para String 
 		case 1:
-			clas = "Mago";
+			clas = "Mago"; //Dependendo do número da classe, a clas ganha uma String que vai ser mostrada na tela, assim o usuário nao precisa digitar o nome da classe de escolha, somente escolher o respectivo número
 			break;
 		case 2:
 			clas = "Feitiçeiro";
@@ -467,6 +468,7 @@ public class Jogo {
 			break;
 		default:
 			System.out.println("Opção inválida");
+			System.exit(0); //Caso o usuário não escolher 1 a 4, o programa fecha
 			break;
 		}
 		System.out.println();
@@ -485,6 +487,6 @@ public class Jogo {
 				+ " no balção bebendo um tipo de cerveja que "
 				+ "\nsó é feita nessa taverna, outras estão em volta de uma mesa jogando algum "
 				+ " tipo de jogo com dados, e um senhor está limpando uma" + " velha mesa no canto");
-		escolha1();
+		escolha1(); //Chama o método que define todas as escolhas disponíveis
 	}
 }
