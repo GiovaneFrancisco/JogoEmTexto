@@ -162,6 +162,7 @@ public class Jogo {
 			break;
 		default:
 			System.out.println("Opção inválida");
+			System.out.println();
 			escolha1(); 
 			break;
 		}
@@ -219,7 +220,7 @@ public class Jogo {
 		case 1:
 			System.out.println();
 			System.out.println("Você se aproxima do balção e se senta no meio dos homens, um deles te olha de um jeito estranho e pergunta o que voce esta fazendo ali");
-			balcao11();
+			balcao1();
 			break;
 		case 2:
 			System.out.println();
@@ -229,7 +230,7 @@ public class Jogo {
 		case 3:
 			System.out.println();
 			System.out.println("Você encosta no balção e percebe que não tem ninguém em sua vista");
-			balcao13();
+			balcao3();
 			break;
 		default:
 			System.out.println();
@@ -239,7 +240,7 @@ public class Jogo {
 		}
 	}
 
-	public static void balcao11() {
+	public static void balcao1() {
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("Você responde");
 		System.out.println("[1] \"Só estou de passagem, procurando algo para beber e esquecer dos problemas\"");
@@ -276,13 +277,13 @@ public class Jogo {
 		default:
 			System.out.println();
 			System.out.println("Opcao inválida");
-			balcao11();
+			balcao1();
 			break;
 		}
 
 	}
 
-	public static void balcao13() {
+	public static void balcao3() {
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("[1] Gritar para chamar atenção de alguém");
 		System.out.println("[2] Deixar pra lá");
@@ -302,6 +303,8 @@ public class Jogo {
 			escolha1();
 			break;
 		default:
+			System.out.println("Opção inválida");
+			balcao3();
 			break;
 		}
 
